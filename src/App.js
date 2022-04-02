@@ -16,6 +16,7 @@ function App() {
 
   const deleteRecipeHandler = (recipeIndex) => {
     setRecipes(recipes.filter((item, index) => index !== recipeIndex));
+    console.log(recipeIndex, "to delete");
   };
 
   return (

@@ -25,7 +25,9 @@ function RecipeList({ recipes, deleteRecipeHandler }) {
           <p>{preparation}</p>
         </td>
         <td>
-          <button onClick={deleteRecipeHandler}>Delete</button>
+          <button name="delete" onClick={() => deleteRecipeHandler(index)}>
+            Delete
+          </button>
         </td>
       </tr>
     );
